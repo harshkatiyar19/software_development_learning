@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: spring-security
+
+  datasource:
+    url: jdbc:postgresql://localhost:5435/security
+    username: security
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.example.spring_security: DEBUG
