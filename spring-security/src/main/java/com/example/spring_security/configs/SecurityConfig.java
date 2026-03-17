@@ -75,7 +75,7 @@ public class SecurityConfig {
     }
 
 
-`    // 6️⃣ AuthenticationManager Bean
+    // 6️⃣ AuthenticationManager Bean
     @Bean
     public AuthenticationManager authenticationManager(
             HttpSecurity http,
@@ -112,7 +112,7 @@ public class SecurityConfig {
             * */
 
         return builder.build();
-    }`
+    }
 
 
 //rest based filter chain
